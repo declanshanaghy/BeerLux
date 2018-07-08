@@ -1,0 +1,36 @@
+# general
+*.sw*
+*~
+.DS_Store
+.idea
+
+# Codeship encryption key
+codeship.aes
+cicd/envs/*.env
+
+# Binary built by repo
+example-pipeline
+
+# Test binary, build with `go test -c`
+*.test
+
+# Coverage and Test output
+coverage.txt
+test.txt
+
+# Temporary directory for SSH keys
+tmp/
+
+# VSCode
+/.vscode/
+codeship.aes
+codeship_deploy_key
+codeship_deploy_key.pub
+codeship.env
+.ssh
+
+#ci/cd generated content (Should be manually overridden if you want to add/change one of these files)
+cicd/k8s/environments/playground3-oregon/params.libsonnet
+
+# junk
+debug
